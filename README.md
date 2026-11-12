@@ -4,10 +4,10 @@ Four small pull requests for trying [Proof of Done for Jira](https://github.com/
 
 | Pull request | What it does | What Proof of Done says |
 |---|---|---|
-| DEMO-1 | Adds a 10% discount and a test with the exact new value | Ready for Done |
-| DEMO-2 | Changes rounding and loosens the rounding test to `assert.ok` | Blocked: the test was weakened |
-| DEMO-3 | Changes free shipping and skips the shipping test | Blocked: the test was skipped |
-| DEMO-4 | First commit breaks the tax test (CI red), second loosens it (CI green) | Blocked, and the timeline points at the commit where CI turned green |
+| DEMO-1 · HONEST | Adds a 10% discount and a test with the exact new value | Ready for Done |
+| DEMO-2 · WEAKENED ASSERTION | Changes rounding and loosens the rounding test to `assert.ok` | Blocked: the test was weakened |
+| DEMO-3 · SKIPPED TEST | Changes free shipping and skips the shipping test | Blocked: the test was skipped |
+| DEMO-4 · GREEN AFTER WEAKENING | First commit breaks the tax test (CI red), second loosens it (CI green) | Blocked, and the timeline points at the commit where CI turned green |
 
 ## Try it
 
