@@ -1,0 +1,24 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { total, discount, shipping, roundPrice, tax } from "../src/cart.js";
+
+test("adds up the cart", () => {
+  assert.equal(total([{ price: 10, qty: 2 }, { price: 5, qty: 1 }]), 25);
+});
+
+test("no discount yet", () => {
+  assert.equal(discount(50), 50);
+});
+
+test("free shipping from 100", () => {
+  assert.equal(shipping(100), 0);
+  assert.equal(shipping(99), 5);
+});
+
+test("prices round to cents", () => {
+  assert.equal(roundPrice(10.456), 10.46);
+});
+
+test("tax is 18 percent", () => {
+  assert.equal(tax(100), 18);
+});
