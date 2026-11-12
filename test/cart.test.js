@@ -6,8 +6,8 @@ test("adds up the cart", () => {
   assert.equal(total([{ price: 10, qty: 2 }, { price: 5, qty: 1 }]), 25);
 });
 
-test("no discount yet", () => {
-  assert.equal(discount(50), 50);
+test("10% discount", () => {
+  assert.equal(discount(50), 45);
 });
 
 test("free shipping from 100", () => {
